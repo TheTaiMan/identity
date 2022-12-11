@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from '../../../styles/styles.module.css';
 
 export default function Search() {
   return (
     <div
-      className="notion-focusable"
+      className={styles.hover}
       role="button"
       tabIndex={0}
       style={{
@@ -15,8 +16,8 @@ export default function Search() {
         justifyContent: 'center',
         flexShrink: 0,
         borderRadius: 3,
-        height: 28,
-        width: 28,
+        height: 14,
+        width: 14,
         padding: 6,
         fontSize: 14,
         color: 'rgba(55, 53, 47, 0.65)',

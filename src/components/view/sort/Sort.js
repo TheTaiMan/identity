@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from '../../nav/Nav.module.css';
+import styles from '../../../styles/styles.module.css';
 
 export default function Sort() {
   return (
     <div
-      className="notion-focusable"
+      className={styles.hover}
       role="button"
       tabIndex={0}
       style={{
@@ -15,7 +15,7 @@ export default function Sort() {
         alignItems: 'center',
         flexShrink: 0,
         whiteSpace: 'nowrap',
-        height: 28,
+        height: 14,
         borderRadius: 3,
         fontSize: 14,
         lineHeight: 1,
