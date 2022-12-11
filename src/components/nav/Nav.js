@@ -5,10 +5,11 @@ import Duplicate from './duplicate/Duplicate';
 import Gap from './gap/Gap';
 import Notion from './notion/Notion';
 import Search from './search/Search';
+import navStyles from './Nav.module.css';
 
 export default function Nav() {
   return (
-    <div>
+    <header className={navStyles.container}>
       <Title type={'whoAmI'} size={14} />
       <div
         style={{
@@ -28,6 +29,6 @@ export default function Nav() {
         <Gap />
         <Notion />
       </div>
-    </div>
+    </header>
   );
 }

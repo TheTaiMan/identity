@@ -8,7 +8,7 @@ export default function Icon({ icon }) {
     <div className={classNames(iconStyle.container, styles.center)}>
       <img
         style={{
-          width: '100%',
+          width: 'inherit',
           filter:
             'invert(62%) sepia(68%) saturate(6877%) hue-rotate(337deg) brightness(87%) contrast(83%)',
         }}
