@@ -1,0 +1,132 @@
+.container {
+  -webkit-text-size-adjust: 100%;
+  color: rgb(55, 53, 47);
+  fill: currentcolor;
+  line-height: 1.5;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  -webkit-font-smoothing: auto;
+  cursor: text;
+  -webkit-user-modify: read-only;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  --pseudoSelection--background: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 0;
+  position: sticky;
+  left: 0px;
+  z-index: 2;
+}
+
+.container-second {
+  -webkit-text-size-adjust: 100%;
+  color: rgb(55, 53, 47);
+  fill: currentcolor;
+  line-height: 1.5;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  -webkit-font-smoothing: auto;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  --pseudoSelection--background: transparent;
+  outline: 0;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20vh;
+  cursor: default;
+}
+
+.container-third {
+  -webkit-text-size-adjust: 100%;
+  color: rgb(55, 53, 47);
+  fill: currentcolor;
+  line-height: 1.5;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  -webkit-font-smoothing: auto;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  --pseudoSelection--background: transparent;
+  outline: 0;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: inherit;
+}
+
+.container-forth {
+  -webkit-text-size-adjust: 100%;
+  color: rgb(55, 53, 47);
+  fill: currentcolor;
+  line-height: 1.5;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  -webkit-font-smoothing: auto;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  --pseudoSelection--background: transparent;
+  cursor: inherit;
+  outline: 0;
+  box-sizing: border-box;
+  display: grid;
+  width: 100%;
+  height: 20vh;
+}
+
+.container-sixth {
+  -webkit-text-size-adjust: 100%;
+  color: rgb(55, 53, 47);
+  fill: currentcolor;
+  line-height: 1.5;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  -webkit-font-smoothing: auto;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  --pseudoSelection--background: transparent;
+  cursor: inherit;
+  outline: 0;
+  box-sizing: border-box;
+  grid-area: 1 / 1 / auto / auto;
+  width: 100%;
+  height: 100%;
+}
+
+.banner {
+  -webkit-text-size-adjust: 100%;
+  color: rgb(55, 53, 47);
+  fill: currentcolor;
+  line-height: 1.5;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  -webkit-font-smoothing: auto;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  --pseudoSelection--background: transparent;
+  cursor: inherit;
+  outline: 0;
+  box-sizing: border-box;
+  border: 0;
+  display: block;
+  object-fit: cover;
+  border-radius: 0px;
+  width: 100%;
+  height: 20vh;
+  opacity: 1;
+  object-position: center 47.26%;
+}
