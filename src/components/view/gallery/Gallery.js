@@ -1,0 +1,31 @@
+import React from 'react';
+import galleryStyles from './Gallery.module.css';
+
+export default function Gallery() {
+  return (
+    <div className={galleryStyles.container}>
+      <div className={galleryStyles.box}>
+        <div className={galleryStyles.gallery}>
+          <div />
+          <img
+            style={{
+              width: '17px',
+            }}
+            src={'/icons/imageIcon.png'}
+            alt="yeah"
+          />
+          <span
+            style={{
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              marginTop: 1,
+            }}
+          >
+            Gallery
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}

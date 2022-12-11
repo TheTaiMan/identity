@@ -1,0 +1,84 @@
+.container {
+  -webkit-text-size-adjust: 100%;
+  color: rgb(55, 53, 47);
+  fill: currentcolor;
+  line-height: 1.5;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  -webkit-font-smoothing: auto;
+  cursor: text;
+  -webkit-user-modify: read-only;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 40px;
+  padding-left: 96px;
+  padding-right: 96px;
+  flex-shrink: 0;
+  z-index: 85;
+  position: sticky;
+  left: 0px;
+
+  width: 100%;
+  padding: 0px 100px;
+  box-sizing: border-box;
+}
+
+.container-second {
+  -webkit-text-size-adjust: 100%;
+  color: rgb(55, 53, 47);
+  fill: currentcolor;
+  line-height: 1.5;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  -webkit-font-smoothing: auto;
+  cursor: text;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.container-third {
+  -webkit-text-size-adjust: 100%;
+  color: rgb(55, 53, 47);
+  fill: currentcolor;
+  line-height: 1.5;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  -webkit-font-smoothing: auto;
+  cursor: text;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  box-shadow: rgb(233, 233, 231) 0px -1px 0px inset;
+  z-index: 1;
+  position: sticky;
+  left: 96px;
+  width: 100%;
+}
+
+.right-end {
+  -webkit-text-size-adjust: 100%;
+  color: rgb(55, 53, 47);
+  fill: currentcolor;
+  line-height: 1.5;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  -webkit-font-smoothing: auto;
+  cursor: text;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  opacity: 1;
+}

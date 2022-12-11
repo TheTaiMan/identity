@@ -9,14 +9,14 @@ const data = {
   whoAmI: ['/icons/userIcon.png', 'Who Am I?'],
 };
 
-export default function Title({ type, size }) {
+export default function Title({ type, main = false }) {
   return (
     <div
-      style={{ fontSize: `${size}px` }}
-      className={classNames(titleStyles.container, navStyles.hover)}
+      style={{ fontSize: main ? 32 : 14 }}
+      className={classNames(titleStyles.container, !main && navStyles.hover)}
     >
       <Icon icon={data[type][0]} />
-      <Text text={data[type][1]} />
+      <Text text={data[type][1]} main={main} />
     </div>
   );
 }

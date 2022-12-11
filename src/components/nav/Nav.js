@@ -10,7 +10,7 @@ import navStyles from './Nav.module.css';
 export default function Nav() {
   return (
     <header className={navStyles.container}>
-      <Title type={'whoAmI'} size={14} />
+      <Title type={'whoAmI'}/>
       <div
         style={{
           display: 'flex',
