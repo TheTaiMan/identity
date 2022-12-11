@@ -1,11 +1,10 @@
 import React from 'react';
-import navStyles from '../Nav.module.css';
-
+import styles from '../../../styles/styles.module.css';
 
 export default function Search() {
   return (
     <div
-      className={navStyles.hover}
+      className={styles.hover}
       role="button"
       tabIndex={0}
       style={{

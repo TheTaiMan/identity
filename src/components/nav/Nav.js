@@ -7,6 +7,7 @@ import Notion from './notion/Notion';
 import Search from './search/Search';
 import navStyles from './Nav.module.css';
 
+
 export default function Nav() {
   return (
     <header className={navStyles.container}>

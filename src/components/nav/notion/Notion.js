@@ -1,6 +1,5 @@
 import React from 'react';
-import navStyles from '../Nav.module.css';
-import styles from '../../../styles/link.module.css';
+import styles from '../../../styles/styles.module.css';
 
 export default function Notion() {
   return (
@@ -11,7 +10,7 @@ export default function Notion() {
       className={styles.link}
     >
       <div
-        className={navStyles.hover}
+        className={styles.hover}
         role="button"
         tabIndex={0}
         style={{

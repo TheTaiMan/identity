@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import iconStyle from './Icon.module.css';
-import styles from '../../../styles/center.module.css';
+import styles from '../../../styles/styles.module.css';
 
 export default function Icon({ icon }) {
   return (
