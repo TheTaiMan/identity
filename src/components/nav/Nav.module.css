@@ -1,0 +1,12 @@
+.container {
+}
+
+.hover {
+  cursor: pointer;
+  transition: 20ms ease-in 0s;
+}
+
+.hover:hover {
+  background-color: #37352f14;
+  cursor: pointer;
+}
