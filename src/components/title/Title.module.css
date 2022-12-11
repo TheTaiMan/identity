@@ -4,5 +4,13 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  gap: 0.3em;
+  padding: 0px 6px;
+  border-radius: 0.2857142857em;
+  transition: all 0.2s;
+}
+
+.container:hover {
+  background-color: #37352f14;
+  cursor: pointer;
 }

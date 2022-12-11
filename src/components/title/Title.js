@@ -7,9 +7,9 @@ const data = {
   whoAmI: ['/icons/userIcon.png', 'Who Am I?'],
 };
 
-export default function Title({ type }) {
+export default function Title({ type, size }) {
   return (
-    <div className={styles.container}>
+    <div style={{ fontSize: `${size}px` }} className={styles.container}>
       <Icon icon={data[type][0]} />
       <Text text={data[type][1]} />
     </div>

@@ -1,9 +1,9 @@
 import Nav from '../nav/Nav';
-import styles from './App.module.css';
+import appStyles from './App.module.css';
 
 function App() {
   return (
-    <div className={styles.container}>
+    <div className={appStyles.container}>
       <Nav />
     </div>
   );
