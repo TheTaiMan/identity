@@ -12,6 +12,15 @@ export default function GalleryContainer() {
               <div className={galleryStyles['container-fifth']}>
                 {/* Gallery STuff here */}
                 <Gallery />
+                <Gallery />
+                <Gallery />
+                <Gallery />
+                <Gallery />
+                <Gallery />
+                <Gallery />
+                <Gallery />
+                <Gallery />
+                <Gallery />
               </div>
             </div>
           </div>

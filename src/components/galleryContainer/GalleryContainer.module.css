@@ -18,7 +18,7 @@
   flex-direction: column;
   position: relative;
 
-  width: 100%;
+  width: inherit;
 }
 
 .container-second {
@@ -94,4 +94,5 @@
   gap: 16px;
   padding-top: 16px;
   padding-bottom: 4px;
+
 }
