@@ -2,7 +2,6 @@ import bannerStyle from './Banner.module.css';
 import classNames from 'classnames';
 
 export default function Banner({ main }) {
-  console.log(main);
   return (
     <div
       className={classNames(

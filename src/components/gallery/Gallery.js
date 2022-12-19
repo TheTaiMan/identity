@@ -1,93 +1,16 @@
 import React from 'react';
 import Banner from '../banner/Banner';
+import galleryStyles from './Gallery.module.css';
+import Title from '../title/Title';
 
 export default function Gallery() {
   return (
     <div>
-      <a
-        href="/"
-        style={{
-          display: 'block',
-          color: 'inherit',
-          textDecoration: 'none',
-          boxShadow:
-            'rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px',
-          borderRadius: 3,
-          background: 'white',
-          overflow: 'hidden',
-          transition: 'background 100ms ease-out 0s',
-          position: 'static',
-          height: '100%',
-        }}
-      >
-        <div
-          style={{
-            userSelect: 'none',
-            transition: 'background 20ms ease-in 0s',
-            cursor: 'pointer',
-            width: '100%',
-            height: '100%',
-            display: 'flex',
-            flexDirection: 'column',
-          }}
-        >
+      <a href="/" className={galleryStyles.body}>
+        <div className={galleryStyles.container}>
           <Banner main={false} />
-          <div
-            style={{
-              width: '100%',
-              display: 'flex',
-              padding: '8px 10px 6px',
-              position: 'relative',
-            }}
-          >
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: 18,
-                width: 18,
-                borderRadius: '0.25em',
-                flexShrink: 0,
-                float: 'left',
-                marginTop: 2,
-                marginRight: 4,
-                marginLeft: '-2px',
-              }}
-            >
-              <div>
-                <div style={{ width: '100%', height: '100%' }}>
-                  <img
-                    src="/icon/userIcon.png"
-                    style={{
-                      display: 'block',
-                      objectFit: 'cover',
-                      borderRadius: 3,
-                      width: '17.28px',
-                      height: '17.28px',
-                      transition: 'opacity 100ms ease-out 0s',
-                    }}
-                    alt={'ya'}
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              style={{
-                maxWidth: '100%',
-                width: 'auto',
-                whiteSpace: 'pre-wrap',
-                wordBreak: 'break-word',
-                caretColor: 'rgb(55, 53, 47)',
-                fontSize: 14,
-                lineHeight: '1.5',
-                minHeight: 21,
-                fontWeight: 500,
-                pointerEvents: 'none',
-              }}
-            >
-              Anime
-            </div>
+          <div className={galleryStyles.title}>
+            <Title type={'whoAmI'} element={'gallery'} />
           </div>
           <div
             style={{
