@@ -1,8 +1,15 @@
 import bannerStyle from './Banner.module.css';
+import classNames from 'classnames';
 
-export default function Banner() {
+export default function Banner({ main }) {
+  console.log(main);
   return (
-    <div className={bannerStyle.container}>
+    <div
+      className={classNames(
+        bannerStyle.container,
+        main && bannerStyle.marginTop
+      )}
+    >
       <div className={bannerStyle['container-second']}>
         <div className={bannerStyle['container-third']}>
           <div className={bannerStyle['container-forth']}>

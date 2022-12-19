@@ -9,7 +9,7 @@ function App() {
   return (
     <div className={appStyles.container}>
       <Nav />
-      <Banner />
+      <Banner main={true}/>
       <Header />
       <View />
       <GalleryContainer />
