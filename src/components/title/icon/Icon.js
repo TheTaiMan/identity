@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import iconStyle from './Icon.module.css';
 import styles from '../../../styles/styles.module.css';
 
-export default function Icon({ icon, element }) {
+export default function Icon({ icon, size = false, element }) {
   return (
     <div
       className={classNames(
@@ -16,7 +16,7 @@ export default function Icon({ icon, element }) {
     >
       <img
         style={{
-          width: element === 'gallery' ? 21 : 'inherit',
+          width: size !== false ? size : 'inherit',
           filter:
             'invert(62%) sepia(68%) saturate(6877%) hue-rotate(337deg) brightness(87%) contrast(83%)',
         }}

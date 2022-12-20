@@ -14,7 +14,7 @@ export default function Title({ page, element }) {
         element === 'nav' && styles.hover
       )}
     >
-      <Icon icon={page.icon} element={element} />
+      <Icon icon={page.icon} size={page.size} element={element} />
       <Text text={page.text} element={element} />
     </div>
   );

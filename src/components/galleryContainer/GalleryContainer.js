@@ -4,10 +4,11 @@ import galleryStyles from './GalleryContainer.module.css';
 
 const data = [
   {
-    banner: '',
+    banner: '/banners/anime.jpg',
     page: {
-      text: 'Who Am I',
-      icon: '/icons/userIcon.png',
+      text: 'Anime',
+      icon: '/icons/sowrd.png',
+      size: 17,
     },
     tag: 'personal',
   },

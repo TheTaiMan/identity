@@ -9,7 +9,7 @@ export default function Gallery({ banner, page, tag }) {
     <div>
       <a href="/" className={galleryStyles.body}>
         <div className={galleryStyles.container}>
-          <Banner main={false} banner={'/banners/lofi.png'} />
+          <Banner main={false} banner={banner} />
           <div className={galleryStyles.title}>
             <Title page={page} element={'gallery'} />
           </div>
