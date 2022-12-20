@@ -5,7 +5,10 @@ import headerStyles from './Header.module.css';
 export default function Header() {
   return (
     <div className={headerStyles.container}>
-      <Title type={'whoAmI'} element={'main'} />
+      <Title
+        page={{ text: 'Who Am I', icon: '/icons/userIcon.png' }}
+        element={'main'}
+      />
     </div>
   );
 }

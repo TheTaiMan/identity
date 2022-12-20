@@ -4,16 +4,16 @@ import galleryStyles from './Gallery.module.css';
 import Title from '../title/Title';
 import Type from '../type/Type';
 
-export default function Gallery({ type }) {
+export default function Gallery({ banner, page, tag }) {
   return (
     <div>
       <a href="/" className={galleryStyles.body}>
         <div className={galleryStyles.container}>
-          <Banner main={false} />
+          <Banner main={false} banner={'/banners/lofi.png'} />
           <div className={galleryStyles.title}>
-            <Title type={type} element={'gallery'} />
+            <Title page={page} element={'gallery'} />
           </div>
-          <Type />
+          <Type tag={tag} />
         </div>
       </a>
     </div>

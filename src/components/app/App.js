@@ -9,7 +9,7 @@ function App() {
   return (
     <div className={appStyles.container}>
       <Nav />
-      <Banner main={true}/>
+      <Banner main={true} banner={'/banners/lofi.png'} />
       <Header />
       <View />
       <GalleryContainer />

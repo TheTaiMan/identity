@@ -1,7 +1,7 @@
 import bannerStyle from './Banner.module.css';
 import classNames from 'classnames';
 
-export default function Banner({ main }) {
+export default function Banner({ banner, main }) {
   return (
     <div
       className={classNames(
@@ -16,7 +16,7 @@ export default function Banner({ main }) {
               <img
                 className={bannerStyle.banner}
                 alt="main banner"
-                src={'/banners/lofi.png'}
+                src={banner}
               />
             </div>
           </div>
