@@ -10,17 +10,16 @@ export default function GalleryContainer() {
           <div className={galleryStyles['container-forth']}>
             <div>
               <div className={galleryStyles['container-fifth']}>
-                {/* Gallery STuff here */}
-                <Gallery />
-                <Gallery />
-                <Gallery />
-                <Gallery />
-                <Gallery />
-                <Gallery />
-                <Gallery />
-                <Gallery />
-                <Gallery />
-                <Gallery />
+                <Gallery type={"whoAmI"}/>
+                <Gallery type={"whoAmI"}/>
+                <Gallery type={"whoAmI"}/>
+                <Gallery type={"whoAmI"}/>
+                <Gallery type={"whoAmI"}/>
+                <Gallery type={"whoAmI"}/>
+                <Gallery type={"whoAmI"}/>
+                <Gallery type={"whoAmI"}/>
+                <Gallery type={"whoAmI"}/>
+                <Gallery type={"whoAmI"}/>
               </div>
             </div>
           </div>
