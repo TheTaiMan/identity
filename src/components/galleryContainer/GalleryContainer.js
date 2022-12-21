@@ -10,6 +10,42 @@ const data = [
       icon: '/icons/sowrd.png',
       size: 17,
     },
+    tag: 'media',
+  },
+  {
+    banner: '/banners/friends.jpg',
+    page: {
+      text: 'Friends',
+      icon: '/icons/friends.png',
+      size: 17,
+    },
+    tag: 'social',
+  },
+  {
+    banner: '/banners/ajr.jpg',
+    page: {
+      text: 'Music',
+      icon: '/icons/music.png',
+      size: 17,
+    },
+    tag: 'media',
+  },
+  {
+    banner: '/banners/school.jpg',
+    page: {
+      text: 'School',
+      icon: '/icons/school.png',
+      size: 17,
+    },
+    tag: 'social',
+  },
+  {
+    banner: '/banners/canada.png',
+    page: {
+      text: 'Canada',
+      icon: '/icons/canada.png',
+      size: 17,
+    },
     tag: 'personal',
   },
 ];
