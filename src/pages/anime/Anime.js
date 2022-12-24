@@ -19,6 +19,10 @@ export default function Anime() {
         marginRight: 'auto',
         height: 'calc(100% - 144px)',
       }}
+      onClick={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+      }}
     />
   );
 }
