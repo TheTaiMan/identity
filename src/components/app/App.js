@@ -6,11 +6,17 @@ import View from '../view/View';
 import GalleryContainer from '../galleryContainer/GalleryContainer';
 import { Route, Routes } from 'react-router-dom';
 import Overlay from '../overlay/Overlay';
+import Anime from '../../pages/anime/Anime';
+import { useLocation } from 'react-router-dom';
 
 function App() {
+  const location = useLocation();
   return (
     <>
-      <div className={appStyles.container}>
+      <div
+        className={appStyles.container}
+        style={{ overflow: location.pathname === '/' ? 'inherit' : 'overlay' }}
+      >
         <Nav />
         <Banner main={true} banner={'/banners/lofi.png'} />
         <Header />
@@ -19,7 +25,14 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Overlay active={false} />} />
-        <Route path="/overlay" element={<Overlay active={true} />} />
+        <Route
+          path="/anime"
+          element={
+            <Overlay>
+              <Anime />
+            </Overlay>
+          }
+        />
       </Routes>
     </>
   );
