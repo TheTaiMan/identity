@@ -10,10 +10,12 @@ import navStyles from './Nav.module.css';
 export default function Nav() {
   return (
     <header className={navStyles.container}>
-      <Title
-        page={{ text: 'Who Am I', icon: '/icons/userIcon.png' }}
-        element={'nav'}
-      />
+      <div className={navStyles.title}>
+        <Title
+          page={{ text: 'Who Am I', icon: '/icons/userIcon.png' }}
+          element={'nav'}
+        />
+      </div>
       <div
         style={{
           display: 'flex',

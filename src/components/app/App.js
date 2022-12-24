@@ -15,7 +15,7 @@ function App() {
     <>
       <div
         className={appStyles.container}
-        style={{ overflow: location.pathname === '/' ? 'inherit' : 'overlay' }}
+        style={{ overflowY: location.pathname === '/' ? 'scroll' : 'overlay' }}
       >
         <Nav />
         <Banner main={true} banner={'/banners/lofi.png'} />
