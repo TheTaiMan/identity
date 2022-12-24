@@ -14,7 +14,9 @@ export default function Banner({ banner, main }) {
           <div className={bannerStyle['container-forth']}>
             <div className={bannerStyle['container-sixth']}>
               <img
-                className={bannerStyle.banner}
+                className={classNames(bannerStyle.banner, {
+                  [bannerStyle.hover]: !main,
+                })}
                 alt="main banner"
                 src={banner}
               />

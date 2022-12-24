@@ -134,3 +134,7 @@
   opacity: 1;
   object-position: center 47.26%;
 }
+
+.hover:hover {
+  cursor: pointer;
+}
