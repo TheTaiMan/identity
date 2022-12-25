@@ -1,4 +1,4 @@
-import styles from '../../../styles/styles.module.css';
+import styles from '../../../../styles/styles.module.css';
 import classNames from 'classnames';
 import btnStyles from './btn.module.css';
 

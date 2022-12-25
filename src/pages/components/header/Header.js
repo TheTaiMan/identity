@@ -2,9 +2,9 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Nav from '../nav/Nav';
 import Title from '../title/Title';
-import Banner from '../../components/banner/Banner';
+import Banner from '../../../components/banner/Banner';
 import Category from '../category/Category';
-import data from '../../data/data';
+import data from '../../../data/data';
 
 export default function Header({ children }) {
   const location = useLocation();
@@ -31,7 +31,7 @@ export default function Header({ children }) {
       <Nav />
       <Banner banner={item.banner} main={null} />
       <Title text={item.page.text} size={80} icon={item.page.icon} />
-      <Category type={item.tag}/>
+      <Category type={item.tag} />
       {children}
     </div>
   );

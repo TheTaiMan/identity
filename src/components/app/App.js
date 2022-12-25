@@ -10,6 +10,7 @@ import Anime from '../../pages/anime/Anime';
 import { useLocation } from 'react-router-dom';
 import Friends from '../../pages/friends/Friends';
 import { useEffect } from 'react';
+import Music from '../../pages/music/Music';
 
 function App() {
   const location = useLocation();
@@ -43,6 +44,14 @@ function App() {
           element={
             <Overlay>
               <Friends />
+            </Overlay>
+          }
+        />
+        <Route
+          path="/music"
+          element={
+            <Overlay>
+              <Music />
             </Overlay>
           }
         />

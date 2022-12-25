@@ -1,5 +1,5 @@
 import React from 'react';
-import Tag from '../../components/type/tag/Tag';
+import Tag from '../../../components/type/tag/Tag';
 
 export default function Category({ type }) {
   return (
