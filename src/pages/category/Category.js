@@ -1,7 +1,7 @@
 import React from 'react';
 import Tag from '../../components/type/tag/Tag';
 
-export default function Category() {
+export default function Category({ type }) {
   return (
     <div
       style={{
@@ -15,8 +15,6 @@ export default function Category() {
       }}
     >
       <div
-        contentEditable="false"
-        data-content-editable-void="true"
         style={{
           paddingLeft: 'calc(126px + env(safe-area-inset-left))',
           paddingRight: 'calc(126px + env(safe-area-inset-right))',
@@ -50,9 +48,7 @@ export default function Category() {
                     }}
                   >
                     <div
-                      className="notion-focusable"
                       role="button"
-                      aria-disabled="true"
                       tabIndex={-1}
                       style={{
                         userSelect: 'none',
@@ -120,9 +116,7 @@ export default function Category() {
                       }}
                     >
                       <div
-                        className="notion-focusable"
                         role="button"
-                        aria-disabled="true"
                         tabIndex={-1}
                         style={{
                           userSelect: 'none',
@@ -145,7 +139,7 @@ export default function Category() {
                             paddingBottom: 2,
                           }}
                         >
-                          <Tag type="media" page={true} />
+                          <Tag type={type} page={true} />
                         </div>
                         <div
                           style={{
@@ -173,7 +167,6 @@ export default function Category() {
           }}
         />
         <div
-          className="notion-page-details-controls"
           style={{
             display: 'flex',
             alignItems: 'baseline',

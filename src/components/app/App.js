@@ -9,9 +9,13 @@ import Overlay from '../overlay/Overlay';
 import Anime from '../../pages/anime/Anime';
 import { useLocation } from 'react-router-dom';
 import Friends from '../../pages/friends/Friends';
+import { useEffect } from 'react';
 
 function App() {
   const location = useLocation();
+  useEffect(() => {
+    console.log('Location: ' + location.pathname.slice(1));
+  }, [location.pathname]);
   return (
     <>
       <div
@@ -42,7 +46,6 @@ function App() {
             </Overlay>
           }
         />
-
       </Routes>
     </>
   );
