@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from '../nav/Nav';
 
 export default function Anime() {
   return (
@@ -19,10 +20,8 @@ export default function Anime() {
         marginRight: 'auto',
         height: 'calc(100% - 144px)',
       }}
-      onClick={(e) => {
-        e.preventDefault();
-        e.stopPropagation();
-      }}
-    />
+    >
+      <Nav />
+    </div>
   );
 }
