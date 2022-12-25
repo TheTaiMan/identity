@@ -1,5 +1,7 @@
 import React from 'react';
+import Banner from '../../components/banner/Banner';
 import Nav from '../nav/Nav';
+import Title from '../title/Title';
 
 export default function Anime() {
   return (
@@ -22,6 +24,8 @@ export default function Anime() {
       }}
     >
       <Nav />
+      <Banner banner="/banners/lofi.png" main={null} />
+      <Title text={'Anime'} size={80} icon={'/icons/space.png'} />
     </div>
   );
 }

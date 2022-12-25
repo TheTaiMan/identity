@@ -15,7 +15,7 @@ export default function Banner({ banner, main }) {
             <div className={bannerStyle['container-sixth']}>
               <img
                 className={classNames(bannerStyle.banner, {
-                  [bannerStyle.hover]: !main,
+                  [bannerStyle.hover]: !main && main !== null,
                 })}
                 alt="main banner"
                 src={banner}

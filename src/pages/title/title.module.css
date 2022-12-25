@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  height: 126px;
+  padding-left: 130px;
+  align-content: space-between;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 40px;
+  line-height: 40px;
+  height: 40px;
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 48px;
+  z-index: 800;
+}
