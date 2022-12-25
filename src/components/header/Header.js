@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className={headerStyles.container}>
       <Title
-        page={{ text: 'Who Am I', icon: '/icons/userIcon.png' }}
+        page={{ text: 'Who Am I?', icon: '/icons/userIcon.png' }}
         element={'main'}
       />
     </div>

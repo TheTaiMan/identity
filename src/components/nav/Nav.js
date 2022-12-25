@@ -12,7 +12,7 @@ export default function Nav() {
     <header className={navStyles.container}>
       <div className={navStyles.title}>
         <Title
-          page={{ text: 'Who Am I', icon: '/icons/userIcon.png' }}
+          page={{ text: 'Who Am I?', icon: '/icons/userIcon.png' }}
           element={'nav'}
         />
       </div>
