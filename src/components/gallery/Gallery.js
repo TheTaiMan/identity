@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 export default function Gallery({ banner, page, tag }) {
   return (
     <div>
-      <Link to="/anime" className={galleryStyles.body}>
+      <Link to={`/${page.text.toLowerCase()}`} className={galleryStyles.body}>
         <div className={galleryStyles.container}>
           <Banner main={false} banner={banner} />
           <div className={galleryStyles.title}>

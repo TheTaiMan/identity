@@ -32,8 +32,7 @@ export default function Nav() {
           }}
         >
           <a
-            href="/Music-92b12e2e86b9407996dbe414e6e9bca7"
-            rel="noopener noreferrer"
+            href="#"
             className={styles.hover}
             style={{
               display: 'block',

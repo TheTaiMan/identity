@@ -4,7 +4,7 @@ import Nav from '../nav/Nav';
 import Title from '../title/Title';
 import Category from '../category/Category';
 
-export default function Anime() {
+export default function Friends() {
   return (
     <div
       style={{
@@ -25,8 +25,8 @@ export default function Anime() {
       }}
     >
       <Nav />
-      <Banner banner="/banners/anime.jpg" main={null} />
-      <Title text={'Anime'} size={80} icon={'/icons/sowrd.png'} />
+      <Banner banner="/banners/friends.jpg" main={null} />
+      <Title text={'Anime'} size={80} icon={'/icons/friends.png'} />
       <Category />
     </div>
   );

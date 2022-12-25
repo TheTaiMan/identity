@@ -8,6 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 import Overlay from '../overlay/Overlay';
 import Anime from '../../pages/anime/Anime';
 import { useLocation } from 'react-router-dom';
+import Friends from '../../pages/friends/Friends';
 
 function App() {
   const location = useLocation();
@@ -33,6 +34,15 @@ function App() {
             </Overlay>
           }
         />
+        <Route
+          path="/friends"
+          element={
+            <Overlay>
+              <Friends />
+            </Overlay>
+          }
+        />
+
       </Routes>
     </>
   );

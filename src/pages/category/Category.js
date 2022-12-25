@@ -1,4 +1,5 @@
 import React from 'react';
+import Tag from '../../components/type/tag/Tag';
 
 export default function Category() {
   return (
@@ -82,7 +83,7 @@ export default function Category() {
                               height: 22,
                               opacity: 0.5,
                               marginTop: 1.5,
-                              marginLeft: 1
+                              marginLeft: 1,
                             }}
                           />
                         </div>
@@ -144,35 +145,7 @@ export default function Category() {
                             paddingBottom: 2,
                           }}
                         >
-                          <div
-                            style={{
-                              display: 'flex',
-                              alignItems: 'center',
-                              flexShrink: 1,
-                              minWidth: 0,
-                              height: 20,
-                              borderRadius: 3,
-                              paddingLeft: 6,
-                              paddingRight: 6,
-                              fontSize: 14,
-                              lineHeight: '120%',
-                              color: 'rgb(68, 42, 30)',
-                              background: 'rgb(238, 224, 218)',
-                              margin: '0px 6px 6px 0px',
-                            }}
-                          >
-                            <div
-                              style={{
-                                whiteSpace: 'nowrap',
-                                overflow: 'hidden',
-                                textOverflow: 'ellipsis',
-                                display: 'flex',
-                                alignItems: 'center',
-                              }}
-                            >
-                              <div style={{ display: 'block' }}>Media</div>
-                            </div>
-                          </div>
+                          <Tag type="media" page={true} />
                         </div>
                         <div
                           style={{

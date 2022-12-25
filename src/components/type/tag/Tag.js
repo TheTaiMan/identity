@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 import tagStyles from './Tag.module.css';
 
@@ -24,11 +25,14 @@ const data = {
   },
 };
 
-export default function Tag({ type }) {
+export default function Tag({ type, page = false }) {
   const { text, color, background } = data[type];
   return (
     <div
-      className={tagStyles.container}
+      className={classNames(tagStyles.container, {
+        [tagStyles.gallery]: !page,
+        [tagStyles.page]: page,
+      })}
       style={{
         color: color,
         background: background,
