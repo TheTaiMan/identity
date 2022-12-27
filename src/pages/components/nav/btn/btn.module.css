@@ -30,3 +30,7 @@
   flex-shrink: 0;
   backface-visibility: hidden;
 }
+
+.dim {
+  opacity: 0.4;
+}

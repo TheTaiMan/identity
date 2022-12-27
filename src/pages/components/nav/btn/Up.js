@@ -8,13 +8,12 @@ import data from '../../../../data/data';
 export default function Up() {
   const location = useLocation();
   const navigate = useNavigate();
+  const items = Object.keys(data);
+  const index = items.indexOf(location.pathname.slice(1));
+  const limit = index === 0;
 
   const handleClick = (e) => {
-    const items = Object.keys(data);
-    const index = items.indexOf(location.pathname.slice(1));
-    console.log(items.length);
-    console.log(index);
-    if (index - 1 !== -1) {
+    if (limit === false) {
       navigate(`/${items[index - 1]}`);
     }
   };
@@ -23,7 +22,10 @@ export default function Up() {
     <div
       role="button"
       tabIndex={0}
-      className={classNames(styles.hover, btnStyles.container)}
+      className={classNames(
+        { [styles.hover]: !limit, [btnStyles.dim]: limit },
+        btnStyles.container
+      )}
       onClick={handleClick}
     >
       <svg viewBox="0 0 15 9" className={btnStyles.symbol}>

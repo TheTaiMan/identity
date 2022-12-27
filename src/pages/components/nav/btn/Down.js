@@ -8,20 +8,23 @@ import data from '../../../../data/data';
 export default function Down() {
   const location = useLocation();
   const navigate = useNavigate();
+  const items = Object.keys(data);
+  const index = items.indexOf(location.pathname.slice(1));
+  const limit = index === 9;
 
   const handleClick = (e) => {
-    const items = Object.keys(data);
-    const index = items.indexOf(location.pathname.slice(1));
-    if (index + 1 !== items.length) {
+    if (limit === false) {
       navigate(`/${items[index + 1]}`);
     }
   };
 
   return (
     <div
-      className={classNames(styles.hover, btnStyles.container)}
+      className={classNames(
+        { [styles.hover]: !limit, [btnStyles.dim]: limit },
+        btnStyles.container
+      )}
       role="button"
-      tabIndex={0}
       onClick={handleClick}
     >
       <svg viewBox="0 0 15 9" className={btnStyles.symbol}>
