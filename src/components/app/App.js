@@ -11,6 +11,13 @@ import { useLocation } from 'react-router-dom';
 import Friends from '../../pages/friends/Friends';
 import { useEffect } from 'react';
 import Music from '../../pages/music/Music';
+import School from '../../pages/school/School';
+import Canada from '../../pages/canada/Canada';
+import Youtube from '../../pages/youtube/Youtube';
+import Notion from '../../pages/notion/Notion';
+import Astrophysics from '../../pages/astrophysics/Astrophysics';
+import Programing from '../../pages/programing/Programing';
+import Debating from '../../pages/debating/Debating';
 
 function App() {
   const location = useLocation();
@@ -52,6 +59,62 @@ function App() {
           element={
             <Overlay>
               <Music />
+            </Overlay>
+          }
+        />
+        <Route
+          path="/school"
+          element={
+            <Overlay>
+              <School />
+            </Overlay>
+          }
+        />
+        <Route
+          path="/canada"
+          element={
+            <Overlay>
+              <Canada />
+            </Overlay>
+          }
+        />
+        <Route
+          path="/youtube"
+          element={
+            <Overlay>
+              <Youtube />
+            </Overlay>
+          }
+        />
+        <Route
+          path="/notion"
+          element={
+            <Overlay>
+              <Notion />
+            </Overlay>
+          }
+        />
+        <Route
+          path="/astrophysics"
+          element={
+            <Overlay>
+              <Astrophysics />
+            </Overlay>
+          }
+        />
+        <Route
+          path="/programing"
+          element={
+            <Overlay>
+              <Programing />
+            </Overlay>
+          }
+        />
+        <Route
+          path="/debating"
+          element={
+            <Overlay>
+              <Debating />
             </Overlay>
           }
         />

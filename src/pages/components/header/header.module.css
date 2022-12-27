@@ -1,0 +1,11 @@
+.container,
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.content {
+  height: 100%;
+  padding: 0 126px 0 126px;
+}

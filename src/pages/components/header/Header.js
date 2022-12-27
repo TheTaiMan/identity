@@ -5,6 +5,7 @@ import Title from '../title/Title';
 import Banner from '../../../components/banner/Banner';
 import Category from '../category/Category';
 import data from '../../../data/data';
+import headerStyles from './header.module.css';
 
 export default function Header({ children }) {
   const location = useLocation();
@@ -26,13 +27,16 @@ export default function Header({ children }) {
         right: 72,
         marginRight: 'auto',
         height: 'calc(100% - 144px)',
+        overflow: 'hidden',
       }}
     >
       <Nav />
       <Banner banner={item.banner} main={null} />
-      <Title text={item.page.text} size={80} icon={item.page.icon} />
-      <Category type={item.tag} />
-      {children}
+      <div className={headerStyles.container}>
+        <Title text={item.page.text} size={80} icon={item.page.icon} />
+        <Category type={item.tag} />
+      </div>
+      <div className={headerStyles.content}>{children}</div>
     </div>
   );
 }

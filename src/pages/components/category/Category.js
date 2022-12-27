@@ -1,42 +1,16 @@
 import React from 'react';
 import Tag from '../../../components/type/tag/Tag';
+import categoryStyles from './category.module.css';
 
 export default function Category({ type }) {
   return (
-    <div
-      style={{
-        width: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        flexShrink: 0,
-        flexGrow: 0,
-        paddingLeft: 126,
-      }}
-    >
-      <div
-        style={{
-          paddingLeft: 'calc(126px + env(safe-area-inset-left))',
-          paddingRight: 'calc(126px + env(safe-area-inset-right))',
-          maxWidth: '100%',
-          width: '100%',
-        }}
-      >
-        <div style={{ width: '100%', fontSize: 14 }}>
-          <div
-            style={{
-              width: '100%',
-              maxWidth: '100%',
-              paddingTop: 8,
-              paddingBottom: 8,
-              margin: '0px auto',
-            }}
-          >
-            <div style={{ margin: 0 }}>
+    <div className={categoryStyles.container}>
+      <div className={categoryStyles['container-second']}>
+        <div className={categoryStyles['container-third']}>
+          <div className={categoryStyles['child-one']}>
+            <div className={categoryStyles['child-two']}>
               <div>
-                <div
-                  style={{ display: 'flex', paddingBottom: 4, width: '100%' }}
-                >
+                <div className={categoryStyles['child-three']}>
                   <div
                     style={{
                       display: 'flex',
