@@ -2,9 +2,21 @@ import styles from '../../../../styles/styles.module.css';
 import classNames from 'classnames';
 import btnStyles from './btn.module.css';
 
+import { useLocation, useNavigate } from 'react-router-dom';
+import data from '../../../../data/data';
+
 export default function Up() {
-  const handleClick = (event) => {
-    console.log('Up');
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleClick = (e) => {
+    const items = Object.keys(data);
+    const index = items.indexOf(location.pathname.slice(1));
+    console.log(items.length);
+    console.log(index);
+    if (index - 1 !== -1) {
+      navigate(`/${items[index - 1]}`);
+    }
   };
 
   return (
