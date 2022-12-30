@@ -1,21 +1,23 @@
 import React from 'react';
+import styles from '../../../styles/styles.module.css'
 
-export default function Toggle() {
+export default function Toggle({ text, img, className }) {
   return (
     <div
       style={{
+        display: 'flex',
         paddingTop: 12,
         paddingBottom: 12,
         flexGrow: 0,
         flexShrink: 0,
-        width: 'calc((100% - 46px) * 0.5)',
+        width: '100%',
       }}
+      className={className}
     >
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         <div
           style={{
             width: '100%',
-            maxWidth: '100%',
             marginTop: 2,
             marginBottom: 0,
           }}
@@ -57,6 +59,7 @@ export default function Toggle() {
                   height: 24,
                   borderRadius: 3,
                 }}
+                className={styles.hover}
               >
                 <svg
                   viewBox="0 0 100 100"
@@ -90,7 +93,7 @@ export default function Toggle() {
                     textAlign: 'left',
                   }}
                 >
-                  <span style={{ fontWeight: 600 }}>Attack on Titan</span>
+                  <span style={{ fontWeight: 600 }}>{text}</span>
                 </div>
               </div>
               <div>
@@ -117,7 +120,7 @@ export default function Toggle() {
                             <div>
                               <div style={{ height: '100%', width: '100%' }}>
                                 <img
-                                  src="https://cdn.animenewsnetwork.com/thumbnails/crop900x350/video/category/62/key_art_naruto.jpg"
+                                  src={img}
                                   style={{
                                     display: 'block',
                                     objectFit: 'cover',

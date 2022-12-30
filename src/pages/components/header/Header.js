@@ -6,6 +6,7 @@ import Banner from '../../../components/banner/Banner';
 import Category from '../category/Category';
 import data from '../../../data/data';
 import headerStyles from './header.module.css';
+import Gap from '../gap/Gap';
 
 export default function Header({ children }) {
   const location = useLocation();
@@ -42,6 +43,7 @@ export default function Header({ children }) {
           <Category type={item.tag} />
         </div>
         <div className={headerStyles.content}>{children}</div>
+        <Gap />
       </div>
     </div>
   );
