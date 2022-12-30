@@ -27,16 +27,22 @@ export default function Header({ children }) {
         right: 72,
         marginRight: 'auto',
         height: 'calc(100% - 144px)',
-        overflow: 'hidden',
       }}
     >
       <Nav />
-      <Banner banner={item.banner} main={null} />
-      <div className={headerStyles.container}>
-        <Title text={item.page.text} size={80} icon={item.page.icon} />
-        <Category type={item.tag} />
+      <div
+        style={{
+          overflowY: 'auto',
+          height: '100vh',
+        }}
+      >
+        <Banner banner={item.banner} main={null} />
+        <div className={headerStyles.container}>
+          <Title text={item.page.text} size={80} icon={item.page.icon} />
+          <Category type={item.tag} />
+        </div>
+        <div className={headerStyles.content}>{children}</div>
       </div>
-      <div className={headerStyles.content}>{children}</div>
     </div>
   );
 }
