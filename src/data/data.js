@@ -39,7 +39,7 @@ const data = {
     banner: '/banners/family.jpg',
     page: {
       text: 'Family',
-      icon: '/icons/canada.png',
+      icon: '/icons/family.webp',
       size: 17,
     },
     tag: 'personal',
