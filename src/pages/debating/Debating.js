@@ -2,11 +2,12 @@ import React from 'react';
 import Header from '../components/header/Header';
 import Toggle from '../components/toggle/Toggle';
 import schoolStyle from '../school/school.module.css';
+import Topic from '../components/topic/Topic';
 
 export default function Debating() {
   return (
     <Header>
-      <h3 style={{ fontWeight: '500' }}>Favorite Topics</h3>
+      <Topic text={'Favorite Topics'} />
       <div className={schoolStyle.parent}>
         <Toggle
           text={'Science'}

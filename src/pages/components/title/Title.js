@@ -16,7 +16,7 @@ export default function Title({ text, size, icon }) {
         />
       </div>
       <span className={titleStyles.text}>
-        <b>{text}</b>
+        <b style={{ color: '#37352f' }}>{text}</b>
       </span>
     </div>
   );

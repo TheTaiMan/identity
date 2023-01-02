@@ -2,11 +2,12 @@ import React from 'react';
 import Header from '../components/header/Header';
 import Toggle from '../components/toggle/Toggle';
 import schoolStyle from '../school/school.module.css';
+import Topic from '../components/topic/Topic';
 
 export default function Programing() {
   return (
     <Header>
-      <h3 style={{ fontWeight: '500' }}>Languages/Frameworks Learned</h3>
+      <Topic text={'Languages/Frameworks Learned'} />
       <div className={schoolStyle.parent}>
         <Toggle
           text={'JavaScript'}

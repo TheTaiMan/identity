@@ -2,11 +2,13 @@ import React from 'react';
 import Header from '../components/header/Header';
 import animeStyles from '../anime/anime.module.css';
 import Toggle from '../components/toggle/Toggle';
+import Topic from '../components/topic/Topic';
 
 export default function Youtube() {
   return (
     <Header>
-      <h3 style={{ fontWeight: '500', lineHeight: '2px' }}>Top YouTubers</h3>
+      <Topic text={'Top YouTubers'} />
+
       <div className={animeStyles.parent}>
         <Toggle
           text={'Star Talk'}
@@ -30,7 +32,7 @@ export default function Youtube() {
           className={animeStyles.div3}
         />
         <Toggle
-          text={"Vsauce"}
+          text={'Vsauce'}
           img={
             'https://detailed-scarer-fbc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fba14e310-5836-423c-a8af-a526b918c159%2FUntitled.png?id=4db3bba5-2b9d-40c8-aa87-40068f7e7229&table=block&spaceId=09324e47-8345-4b77-94c7-ec0c3e23ddf2&width=1800&userId=&cache=v2'
           }

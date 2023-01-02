@@ -2,11 +2,12 @@ import React from 'react';
 import Header from '../components/header/Header';
 import Toggle from '../components/toggle/Toggle';
 import animeStyles from './anime.module.css';
+import Topic from '../components/topic/Topic';
 
 export default function Anime() {
   return (
     <Header>
-      <h3 style={{ fontWeight: '500', lineHeight: '2px' }}>Top Anime</h3>
+      <Topic text={'Top Anime'} />
       <div className={animeStyles.parent}>
         <Toggle
           text={'Attack On Titan'}

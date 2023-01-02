@@ -2,11 +2,13 @@ import React from 'react';
 import Header from '../components/header/Header';
 import Toggle from '../components/toggle/Toggle';
 import schoolStyle from './school.module.css';
+import Topic from '../components/topic/Topic';
 
 export default function School() {
   return (
     <Header>
-      <h3 style={{ fontWeight: '500', lineHeight: '2px' }}>Top Subjects</h3>
+      <Topic text={'Top Subjects'} />
+
       <div className={schoolStyle.parent}>
         <Toggle
           text={'Math'}
@@ -30,7 +32,7 @@ export default function School() {
           className={schoolStyle.div3}
         />
         <Toggle
-          text={"History"}
+          text={'History'}
           img={
             'https://detailed-scarer-fbc.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F73919f84-badc-430e-a889-93dae4878cb1%2FUntitled.png?id=99794502-d0f3-463b-95c3-f350ecb612fc&table=block&spaceId=09324e47-8345-4b77-94c7-ec0c3e23ddf2&width=2000&userId=&cache=v2'
           }

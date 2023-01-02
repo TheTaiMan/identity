@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../styles/styles.module.css'
+import styles from '../../../styles/styles.module.css';
 
 export default function Toggle({ text, img, className }) {
   return (
@@ -93,7 +93,9 @@ export default function Toggle({ text, img, className }) {
                     textAlign: 'left',
                   }}
                 >
-                  <span style={{ fontWeight: 600 }}>{text}</span>
+                  <span style={{ fontWeight: 600, color: '#3d3b35' }}>
+                    {text}
+                  </span>
                 </div>
               </div>
               <div>
