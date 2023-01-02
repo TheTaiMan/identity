@@ -6,7 +6,7 @@ import Toggle from '../components/toggle/Toggle';
 export default function Youtube() {
   return (
     <Header>
-      <h2 style={{ fontWeight: '500', lineHeight: '2px' }}>Top Anime</h2>
+      <h2 style={{ fontWeight: '500', lineHeight: '2px' }}>Top YouTubers</h2>
       <div className={animeStyles.parent}>
         <Toggle
           text={'Star Talk'}
