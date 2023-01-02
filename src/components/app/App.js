@@ -12,7 +12,7 @@ import Friends from '../../pages/friends/Friends';
 import { useEffect } from 'react';
 import Music from '../../pages/music/Music';
 import School from '../../pages/school/School';
-import Canada from '../../pages/canada/Canada';
+import Family from '../../pages/family/Family';
 import Youtube from '../../pages/youtube/Youtube';
 import Notion from '../../pages/notion/Notion';
 import Astrophysics from '../../pages/astrophysics/Astrophysics';
@@ -71,10 +71,10 @@ function App() {
           }
         />
         <Route
-          path="/canada"
+          path="/family"
           element={
             <Overlay>
-              <Canada />
+              <Family />
             </Overlay>
           }
         />

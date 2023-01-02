@@ -6,7 +6,7 @@ import musicStyles from './music.module.css';
 export default function Music() {
   return (
     <Header>
-      <h2 style={{ fontWeight: '500', lineHeight: '2px' }}>Top Songs</h2>
+      <h3 style={{ fontWeight: '500', lineHeight: '2px' }}>Top Songs</h3>
       <div className={musicStyles.parent}>
         <Toggle
           text={'Way Less Sad by AJR'}

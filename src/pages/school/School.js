@@ -6,7 +6,7 @@ import schoolStyle from './school.module.css';
 export default function School() {
   return (
     <Header>
-      <h2 style={{ fontWeight: '500', lineHeight: '2px' }}>Top Subjects</h2>
+      <h3 style={{ fontWeight: '500', lineHeight: '2px' }}>Top Subjects</h3>
       <div className={schoolStyle.parent}>
         <Toggle
           text={'Math'}

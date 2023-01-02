@@ -35,10 +35,10 @@ const data = {
     },
     tag: 'social',
   },
-  canada: {
-    banner: '/banners/canada.png',
+  family: {
+    banner: '/banners/family.jpg',
     page: {
-      text: 'Canada',
+      text: 'Family',
       icon: '/icons/canada.png',
       size: 17,
     },

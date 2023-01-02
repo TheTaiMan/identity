@@ -6,7 +6,7 @@ import animeStyles from './anime.module.css';
 export default function Anime() {
   return (
     <Header>
-      <h2 style={{ fontWeight: '500', lineHeight: '2px' }}>Top Anime</h2>
+      <h3 style={{ fontWeight: '500', lineHeight: '2px' }}>Top Anime</h3>
       <div className={animeStyles.parent}>
         <Toggle
           text={'Attack On Titan'}
