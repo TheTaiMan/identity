@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../../../styles/styles.module.css';
-import classNames from 'classnames/bind';
 
 export default function Credits() {
   return (
